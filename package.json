@@ -6,16 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "fix-images": "node fix-image-permissions.mjs",
-    "test-storage": "node test-storage-permissions.mjs",
-    "init-categories": "node init-categories.mjs",
-    "check-setup": "node check-setup.mjs",
-    "import-products": "node import-products.mjs",
-    "clear-products": "node clear-products.mjs",
-    "upload-products": "node upload-products.mjs",
-    "upload-certifications": "node upload-certifications.mjs",
-    "fix-cors": "node fix-cors.mjs"
+    "lint": "eslint"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
