@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import PageScripts from "@/components/PageScripts";
 import { getSiteSettings, type SiteSettings } from "@/lib/firestore";
 
 const siteUrl =
@@ -165,6 +166,7 @@ export default async function RootLayout({
         />
       </head>
       <body>
+        <PageScripts />
         <Header />
         {children}
         <Footer contact={settings} />
