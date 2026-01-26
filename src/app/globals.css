@@ -2907,7 +2907,7 @@ p {
     }
     
     .nav__logo-img {
-        height: 60px; /* Increased from 45px */
+        height: 40px; /* Reduced for mobile */
     }
     
     .hero__animation {
