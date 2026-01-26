@@ -86,8 +86,6 @@ export default async function CategoryPage(props: CategoryPageProps) {
                   <div
                     key={product.slug}
                     className="product-item"
-                    data-aos="fade-up"
-                    data-aos-delay={(index + 1) * 100}
                     data-product-name={product.name}
                     data-product-description={product.shortDescription ?? product.description}
                     data-product-code={product.productCode ?? ""}
@@ -123,8 +121,6 @@ export default async function CategoryPage(props: CategoryPageProps) {
                 <div
                   key={`${categoryDoc.slug}-overview-${index}`}
                   className="category-overview-photos__photo"
-                  data-aos="fade-up"
-                  data-aos-delay={(index + 1) * 200}
                 >
                   <img
                     src={photo}

@@ -95,8 +95,6 @@ export default async function AllProductsPage({ searchParams }: AllProductsPageP
                 <div
                   key={product.slug}
                   className="all-products-grid__item product-item"
-                  data-aos="fade-up"
-                  data-aos-delay={(index + 1) * 100}
                   data-product-name={product.name}
                   data-product-description={product.shortDescription ?? product.description}
                   data-product-code={product.productCode ?? ""}
