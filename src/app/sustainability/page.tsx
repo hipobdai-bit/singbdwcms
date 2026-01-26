@@ -113,8 +113,6 @@ export default async function SustainabilityPage() {
               <div
                 key={`${certification.name}-${index}`}
                 className="certification__card"
-                data-aos="fade-up"
-                data-aos-delay={(index + 1) * 100}
               >
                 <div className="certification__icon">
                   <img
@@ -140,7 +138,7 @@ export default async function SustainabilityPage() {
           </p>
 
           <div className="initiatives__grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            <div className="initiative__card" data-aos="fade-up" data-aos-delay="100" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
+            <div className="initiative__card" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
               <div className="initiative__icon">
                 <svg
                   className="initiative__svg"
@@ -161,7 +159,7 @@ export default async function SustainabilityPage() {
               </p>
             </div>
 
-            <div className="initiative__card" data-aos="fade-up" data-aos-delay="200" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
+            <div className="initiative__card" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
               <div className="initiative__icon">
                 <svg
                   className="initiative__svg"
@@ -182,7 +180,7 @@ export default async function SustainabilityPage() {
               </p>
             </div>
 
-            <div className="initiative__card" data-aos="fade-up" data-aos-delay="300" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
+            <div className="initiative__card" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
               <div className="initiative__icon">
                 <svg
                   className="initiative__svg"
@@ -206,7 +204,7 @@ export default async function SustainabilityPage() {
               </p>
             </div>
 
-            <div className="initiative__card" data-aos="fade-up" data-aos-delay="400" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
+            <div className="initiative__card" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
               <div className="initiative__icon">
                 <svg
                   className="initiative__svg"
@@ -238,24 +236,24 @@ export default async function SustainabilityPage() {
           </p>
 
           <div className="goals-2030__grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-            <div className="goal__card" data-aos="fade-up" data-aos-delay="100" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
+            <div className="goal__card" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
               <h3 className="goal__title" style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem', color: '#051821', textAlign: 'center' }}>Carbon Neutral by 2030</h3>
               <p className="goal__description" style={{ color: '#051821', lineHeight: '1.6', textAlign: 'center' }}>
                 Reducing greenhouse gas emissions across operations
               </p>
             </div>
 
-            <div className="goal__card" data-aos="fade-up" data-aos-delay="200" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
+            <div className="goal__card" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
               <h3 className="goal__title" style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem', color: '#051821', textAlign: 'center' }}>100% Sustainable Materials</h3>
               <p className="goal__description" style={{ color: '#051821', lineHeight: '1.6', textAlign: 'center' }}>Transitioning to eco-friendly raw materials</p>
             </div>
 
-            <div className="goal__card" data-aos="fade-up" data-aos-delay="300" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
+            <div className="goal__card" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
               <h3 className="goal__title" style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem', color: '#051821', textAlign: 'center' }}>Zero Liquid Discharge</h3>
               <p className="goal__description" style={{ color: '#051821', lineHeight: '1.6', textAlign: 'center' }}>Eliminating wastewater discharge from facilities</p>
             </div>
 
-            <div className="goal__card" data-aos="fade-up" data-aos-delay="400" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
+            <div className="goal__card" style={{ background: '#ffffff', padding: '2rem', borderRadius: '8px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)', border: '1px solid #f1f5f9' }}>
               <h3 className="goal__title" style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.5rem', color: '#051821', textAlign: 'center' }}>Circular Supply Chain</h3>
               <p className="goal__description" style={{ color: '#051821', lineHeight: '1.6', textAlign: 'center' }}>Creating closed-loop manufacturing processes</p>
             </div>

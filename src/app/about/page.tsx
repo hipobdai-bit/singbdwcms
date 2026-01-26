@@ -202,7 +202,7 @@ export default function AboutPage() {
         <div className="values__container">
           <h2 className="section__title" style={{ color: '#0891b2', marginBottom: '3rem' }}>Our Values</h2>
           <div className="values__grid">
-            <div className="value__card" data-aos="fade-up" data-aos-delay="100" style={{ minHeight: '200px' }}>
+            <div className="value__card" style={{ minHeight: '200px' }}>
               <h3 className="value__title" style={{ color: '#051821', marginBottom: '1rem', fontSize: '1.25rem', fontWeight: '600' }}>Quality Excellence</h3>
               <p className="value__description" style={{ color: '#051821', lineHeight: '1.6' }}>
                 We maintain the highest standards in every aspect of our operations, from
@@ -210,7 +210,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="value__card" data-aos="fade-up" data-aos-delay="200" style={{ minHeight: '200px' }}>
+            <div className="value__card" style={{ minHeight: '200px' }}>
               <h3 className="value__title" style={{ color: '#051821', marginBottom: '1rem', fontSize: '1.25rem', fontWeight: '600' }}>Sustainable Practices</h3>
               <p className="value__description" style={{ color: '#051821', lineHeight: '1.6' }}>
                 Environmental responsibility is at the core of everything we do, ensuring a
@@ -218,7 +218,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="value__card" data-aos="fade-up" data-aos-delay="300" style={{ minHeight: '200px' }}>
+            <div className="value__card" style={{ minHeight: '200px' }}>
               <h3 className="value__title" style={{ color: '#051821', marginBottom: '1rem', fontSize: '1.25rem', fontWeight: '600' }}>Global Partnership</h3>
               <p className="value__description" style={{ color: '#051821', lineHeight: '1.6' }}>
                 Building strong, long-term relationships between brands and manufacturers
@@ -226,7 +226,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="value__card" data-aos="fade-up" data-aos-delay="400" style={{ minHeight: '200px' }}>
+            <div className="value__card" style={{ minHeight: '200px' }}>
               <h3 className="value__title" style={{ color: '#051821', marginBottom: '1rem', fontSize: '1.25rem', fontWeight: '600' }}>Innovation</h3>
               <p className="value__description" style={{ color: '#051821', lineHeight: '1.6' }}>
                 Continuously evolving our processes and technologies to meet the changing
