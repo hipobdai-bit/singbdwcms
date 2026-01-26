@@ -37,7 +37,14 @@ export default async function HomePage() {
     { name: "Switch", logoUrl: "/images/Icon/Client List Logo/switch-logo.webp", slug: "switch" },
     { name: "ETOSSA", logoUrl: "/images/Icon/Client List Logo/ETOSSA.webp", slug: "etossa" },
   ];
-  const clients = await getClientLogos();
+  let clients: import("@/lib/firestore").ClientLogo[] = [];
+  try {
+    clients = await getClientLogos();
+  } catch (error) {
+    console.error("Failed to fetch client logos:", error);
+    clients = []; 
+  }
+  
   const clientList =
     clients.length > 0
       ? clients.map((client) => ({

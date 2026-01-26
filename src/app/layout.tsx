@@ -69,7 +69,18 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const settings = await getSiteSettings();
+  let settings: import("@/lib/firestore").SiteSettings;
+  try {
+    settings = await getSiteSettings();
+  } catch (error) {
+    console.error("Failed to fetch site settings:", error);
+    settings = {
+      email: "info@singbd.com",
+      phone: "+8801711594673",
+      addressLines: ["Dhaka, Bangladesh"],
+    };
+  }
+
   const addressLines = settings.addressLines ?? [];
   const addressText = addressLines.join(", ");
   const organizationSchema = {
