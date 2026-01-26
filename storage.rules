@@ -1,0 +1,28 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Products folder - public read, no client write
+    match /products/{allPaths=**} {
+      allow read: if true;
+      allow write: if false; // Only server can write
+    }
+    
+    // Clients folder - public read, no client write
+    match /clients/{allPaths=**} {
+      allow read: if true;
+      allow write: if false; // Only server can write
+    }
+    
+    // Certifications folder - public read, no client write
+    match /certifications/{allPaths=**} {
+      allow read: if true;
+      allow write: if false; // Only server can write
+    }
+    
+    // Default deny all other paths
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

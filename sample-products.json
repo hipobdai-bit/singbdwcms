@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Men's Casual Shirt",
+    "productCode": "WV-001",
+    "shortDescription": "Classic casual shirt made from premium cotton",
+    "categorySlug": "woven-tops",
+    "image": "https://via.placeholder.com/400x500/4A90E2/FFFFFF?text=Mens+Shirt",
+    "order": 1
+  },
+  {
+    "name": "Women's Blouse",
+    "productCode": "WV-002",
+    "shortDescription": "Elegant blouse with modern design",
+    "categorySlug": "woven-tops",
+    "image": "https://via.placeholder.com/400x500/E94B3C/FFFFFF?text=Womens+Blouse",
+    "order": 2
+  },
+  {
+    "name": "Formal Trousers",
+    "productCode": "WB-001",
+    "shortDescription": "Professional trousers for business wear",
+    "categorySlug": "woven-bottoms",
+    "image": "https://via.placeholder.com/400x500/6C757D/FFFFFF?text=Trousers",
+    "order": 1
+  },
+  {
+    "name": "Winter Jacket",
+    "productCode": "JK-001",
+    "shortDescription": "Warm and stylish winter jacket",
+    "categorySlug": "coats-jackets",
+    "image": "https://via.placeholder.com/400x500/28A745/FFFFFF?text=Winter+Jacket",
+    "order": 1
+  },
+  {
+    "name": "Denim Jeans",
+    "productCode": "DN-001",
+    "shortDescription": "Classic blue denim jeans",
+    "categorySlug": "denim",
+    "image": "https://via.placeholder.com/400x500/17A2B8/FFFFFF?text=Denim+Jeans",
+    "order": 1
+  },
+  {
+    "name": "Cotton T-Shirt",
+    "productCode": "KW-001",
+    "shortDescription": "Comfortable cotton t-shirt for everyday wear",
+    "categorySlug": "knitwear",
+    "image": "https://via.placeholder.com/400x500/FFC107/FFFFFF?text=T-Shirt",
+    "order": 1
+  },
+  {
+    "name": "Wool Sweater",
+    "productCode": "SW-001",
+    "shortDescription": "Cozy wool sweater for cold weather",
+    "categorySlug": "sweater",
+    "image": "https://via.placeholder.com/400x500/DC3545/FFFFFF?text=Wool+Sweater",
+    "order": 1
+  },
+  {
+    "name": "Running Shorts",
+    "productCode": "SP-001",
+    "shortDescription": "Lightweight running shorts with moisture-wicking",
+    "categorySlug": "sportswear",
+    "image": "https://via.placeholder.com/400x500/007BFF/FFFFFF?text=Running+Shorts",
+    "order": 1
+  },
+  {
+    "name": "Bed Linen Set",
+    "productCode": "HW-001",
+    "shortDescription": "Premium quality bed linen set",
+    "categorySlug": "homeware",
+    "image": "https://via.placeholder.com/400x500/6F42C1/FFFFFF?text=Bed+Linen",
+    "order": 1
+  },
+  {
+    "name": "Handwoven Basket",
+    "productCode": "HC-001",
+    "shortDescription": "Traditional handwoven basket",
+    "categorySlug": "handicrafts",
+    "image": "https://via.placeholder.com/400x500/E83E8C/FFFFFF?text=Basket",
+    "order": 1
+  },
+  {
+    "name": "Safety Vest",
+    "productCode": "WK-001",
+    "shortDescription": "High-visibility safety vest",
+    "categorySlug": "workwear",
+    "image": "https://via.placeholder.com/400x500/FD7E14/FFFFFF?text=Safety+Vest",
+    "order": 1
+  }
+]

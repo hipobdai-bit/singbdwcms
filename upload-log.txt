@@ -1,0 +1,70 @@
+[dotenv@17.2.3] injecting env (5) from .env.local -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+🚀 Starting product upload from local directory...
+
+📁 Source: /Users/tzl/Downloads/Products
+
+📂 Processing: Coats & Jackets (coats-jackets)
+   ⚠️  Skipped: Auto Bonded Quilted (already exists)
+   ⚠️  Skipped: Bomber (already exists)
+   ⚠️  Skipped: Bomber Jacket 01 (already exists)
+   ⚠️  Skipped: Calor Jacket 01 (already exists)
+   ⚠️  Skipped: Calor Jacket 02 (already exists)
+   ⚠️  Skipped: Calor Jacket 03 (already exists)
+   ⚠️  Skipped: Calor Jacket 04 (already exists)
+   ⚠️  Skipped: Corduroy-jacket-01 (already exists)
+   ✅ Dilata Jacket 01
+   ✅ Dilata Jacket 02
+   ✅ Dilata Jacket 03
+   ✅ Dilata Jacket 04
+   ✅ Dilata Jacket 05
+   ✅ Dilata Jacket 06
+   ✅ Dilata Jacket 07
+   ✅ Dilata Jacket 08
+   ✅ Fake Down Jacket
+   ⚠️  Skipped: Fake Down Jacket (already exists)
+   ✅ Fleece Jacket
+   ✅ Furr Jacket
+   ✅ Heavy Padded
+   ✅ Heavy Parka
+   ✅ Heavy Parker
+   ✅ Hunter Jacket
+   ✅ Hunting-Jacket-01
+   ✅ Hunting-Jacket-02
+   ✅ Hunting-Jacket-03
+   ✅ Ispo-jacket-01
+   ✅ Ispo-jacket-02
+   ✅ Ispo-jacket-03
+   ✅ Ladies Jacket
+   ⚠️  Skipped: Ladies Jacket (already exists)
+   ✅ Ladies Puffer
+   ✅ Long Padded Jacket
+   ✅ Mid Layer Jacket
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ⚠️  Skipped: Mid Layer Jacket (already exists)
+   ✅ PU Jacket 2
+   ✅ PU Jacket 4
+   ✅ PU Jacket
+   ✅ PU jacket 3
+   ✅ Padded Hoodie
+   ✅ Padded Jacket
+   ⚠️  Skipped: Padded Jacket (already exists)
+   ⚠️  Skipped: Padded Jacket (already exists)
+   ⚠️  Skipped: Padded Jacket (already exists)
+   ✅ Padded Parka
+   ✅ Parka Jacket
+   ⚠️  Skipped: Parka Jacket (already exists)
+   ⚠️  Skipped: Parka Jacket (already exists)
+   ⚠️  Skipped: Parka Jacket (already exists)
+   ⚠️  Skipped: Parka Jacket (already exists)
+   ⚠️  Skipped: Parka Jacket (already exists)
+   ⚠️  Skipped: Parka Jacket (already exists)
+   ✅ Parka

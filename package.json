@@ -1,0 +1,37 @@
+{
+  "name": "singbd-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "fix-images": "node fix-image-permissions.mjs",
+    "test-storage": "node test-storage-permissions.mjs",
+    "init-categories": "node init-categories.mjs",
+    "check-setup": "node check-setup.mjs",
+    "import-products": "node import-products.mjs",
+    "clear-products": "node clear-products.mjs",
+    "upload-products": "node upload-products.mjs",
+    "upload-certifications": "node upload-certifications.mjs",
+    "fix-cors": "node fix-cors.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "firebase-admin": "^13.6.0",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
