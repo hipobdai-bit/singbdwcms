@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* CSS Variables based on Frontend Guidelines */
 :root {
     /* Root font size for proper rem calculation */
