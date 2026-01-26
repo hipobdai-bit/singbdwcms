@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { getSiteSettings } from "@/lib/firestore";
+import { getSiteSettings, type SiteSettings } from "@/lib/firestore";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://singbd.com";
@@ -69,11 +69,16 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  let settings: import("@/lib/firestore").SiteSettings;
+  let settings: SiteSettings;
   try {
     settings = await getSiteSettings();
   } catch (error) {
-    console.error("Failed to fetch site settings:", error);
+    // Log explicit error for Vercel debugging
+    console.error("CRITICAL: Failed to fetch site settings in RootLayout.", error);
+    if (error instanceof Error) {
+        console.error("Error Message:", error.message);
+        console.error("Stack:", error.stack);
+    }
     settings = {
       email: "info@singbd.com",
       phone: "+8801711594673",

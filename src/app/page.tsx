@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Fragment } from "react";
-import { getClientLogos } from "@/lib/firestore";
+import { getClientLogos, type ClientLogo } from "@/lib/firestore";
 import WhatsAppButton from "@/components/WhatsAppButton";
+
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -37,7 +39,7 @@ export default async function HomePage() {
     { name: "Switch", logoUrl: "/images/Icon/Client List Logo/switch-logo.webp", slug: "switch" },
     { name: "ETOSSA", logoUrl: "/images/Icon/Client List Logo/ETOSSA.webp", slug: "etossa" },
   ];
-  let clients: import("@/lib/firestore").ClientLogo[] = [];
+  let clients: ClientLogo[] = [];
   try {
     clients = await getClientLogos();
   } catch (error) {
