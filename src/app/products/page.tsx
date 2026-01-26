@@ -29,7 +29,13 @@ export const metadata: Metadata = {
 };
 
 export default async function ProductsPage() {
-  const categories = await getCategories();
+  let categories: import("@/lib/firestore").Category[] = [];
+  try {
+    categories = await getCategories();
+  } catch (error) {
+    console.error("Failed to fetch categories:", error);
+    categories = [];
+  }
 
   return (
     <main className="main">

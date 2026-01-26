@@ -13,10 +13,22 @@ export async function generateMetadata(
   props: CategoryPageProps
 ): Promise<Metadata> {
   const { category } = props.params;
-  const categoryDoc = await getCategoryBySlug(category);
+  let categoryDoc;
+  try {
+    categoryDoc = await getCategoryBySlug(category);
+  } catch (error) {
+    console.error("Failed to fetch category for metadata:", error);
+    return {
+      title: "Not Found",
+      description: "Category not found",
+    };
+  }
 
   if (!categoryDoc) {
-    return {};
+    return {
+      title: "Not Found",
+      description: "Category not found",
+    };
   }
 
   return {
@@ -31,17 +43,28 @@ export async function generateMetadata(
 
 export default async function CategoryPage(props: CategoryPageProps) {
   const { category } = props.params;
-  const categoryDoc = await getCategoryBySlug(category);
+  let categoryDoc;
+  let products: import("@/lib/firestore").Product[] = [];
 
-  if (!categoryDoc) {
-    notFound();
+  try {
+    categoryDoc = await getCategoryBySlug(category);
+    if (!categoryDoc) {
+      notFound();
+    }
+    products = await getProductsByCategory(category);
+  } catch (error) {
+     console.error("Failed to fetch category data:", error);
+     // If we failed to get the category, we probably can't render the page, 
+     // but let's try to not crash hard if it's a DB error.
+     if (!categoryDoc) {
+        notFound();
+     }
   }
-
-  const products = await getProductsByCategory(category);
-  const categoryTitle = `${categoryDoc.name} Collection`;
-  const subtitle = categoryDoc.shortDescription
+  
+  const categoryTitle = categoryDoc ? `${categoryDoc.name} Collection` : "Collection";
+  const subtitle = categoryDoc?.shortDescription
     ? categoryDoc.shortDescription
-    : `Explore our complete collection of premium ${categoryDoc.name.toLowerCase()} products`;
+    : `Explore our collection`;
 
   console.log(`[Category Page] ${category}: Found ${products.length} products`);
 
