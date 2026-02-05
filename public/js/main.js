@@ -516,44 +516,74 @@ function initProductCategories() {
     const categoryItems = document.querySelectorAll('.category__item');
     const productTitle = document.querySelector('.categories__product-title');
     const productDescription = document.querySelector('.categories__product-description');
-    const galleryGrid = document.querySelector('.categories__gallery');
+    const allSlides = document.querySelectorAll('.categories__gallery-slide');
     
     if (categoryItems.length === 0) return;
     
+    const categoryData = {
+        'woven-tops': {
+            title: 'Woven Tops',
+            description: 'High-quality woven tops including shirts, blouses, and tunics. Made from premium fabrics with attention to detail and comfort.'
+        },
+        'woven-bottoms': {
+            title: 'Woven Bottoms',
+            description: 'Classic and contemporary bottom wear including trousers, pants, and skirts.'
+        },
+        'coats-jackets': {
+            title: 'Coats & Jackets',
+            description: 'Stylish and functional outerwear for all seasons and weather conditions.'
+        },
+        'denim': {
+            title: 'Denim',
+            description: 'Classic denim garments and accessories. Timeless style with modern comfort and durability.'
+        },
+        'knitwear': {
+            title: 'Knitwear',
+            description: 'Soft and comfortable knit garments perfect for layering and everyday wear.'
+        },
+        'sweater': {
+            title: 'Sweaters',
+            description: 'Premium sweater collection with intricate designs and superior quality materials.'
+        },
+        'sportswear': {
+            title: 'Sportswear',
+            description: 'Performance sportswear designed for active lifestyles and maximum comfort.'
+        },
+        'homeware': {
+            title: 'Homeware',
+            description: 'Beautiful and functional home textiles and accessories for modern living.'
+        },
+        'handicrafts': {
+            title: 'Handicrafts',
+            description: 'Artisanal handcrafted items showcasing traditional craftsmanship and unique designs.'
+        },
+        'workwear': {
+            title: 'Workwear',
+            description: 'Professional and safety wear. Durable, comfortable, and compliant with industry standards.'
+        }
+    };
+    
     function updateProductDisplay(category) {
-        const data = productData[category];
+        const data = categoryData[category];
         if (!data) return;
         
         // Update title and description
         if (productTitle) productTitle.textContent = data.title;
         if (productDescription) productDescription.textContent = data.description;
         
-        // Update gallery slider
-        if (galleryGrid) {
-            const slider = galleryGrid.querySelector('.categories__gallery-slider');
-            const controls = galleryGrid.querySelector('.categories__gallery-controls');
-            
-            if (slider) {
-                slider.innerHTML = data.images.map((image, index) => `
-                    <div class="categories__gallery-slide">
-                        <img src="images/${image}" alt="${data.title} ${index + 1}" class="categories__gallery-image">
-                    </div>
-                `).join('');
+        // Show only slides for the selected category
+        allSlides.forEach(slide => {
+            if (slide.dataset.category === category) {
+                slide.style.display = 'block';
+            } else {
+                slide.style.display = 'none';
             }
-            
-            if (controls) {
-                controls.innerHTML = data.images.map((_, index) => `
-                    <div class="categories__gallery-dot ${index === 0 ? 'categories__gallery-dot--active' : ''}" data-slide="${index}"></div>
-                `).join('');
-            }
-            
-            // Reset slider position
-            if (slider) {
-                slider.style.transform = 'translateX(0)';
-            }
-            
-            // Reinitialize slider functionality
-            initCategorySlider();
+        });
+        
+        // Reset slider position
+        const slider = document.querySelector('.categories__gallery-slider');
+        if (slider) {
+            slider.style.transform = 'translateX(0)';
         }
     }
     
@@ -572,8 +602,11 @@ function initProductCategories() {
         });
     });
     
-    // Initialize slider for first category
-    initCategorySlider();
+    // Show first category by default
+    const firstCategory = categoryItems[0]?.dataset.category;
+    if (firstCategory) {
+        updateProductDisplay(firstCategory);
+    }
 }
 
 // Initialize Products Page functionality
@@ -708,66 +741,8 @@ function openProductModal(title, description, image, category, code) {
 
 // Category Slider Functionality
 function initCategorySlider() {
-
-    
-    const slider = document.querySelector('.categories__gallery-slider');
-    const dots = document.querySelectorAll('.categories__gallery-dot');
-    const prevBtn = document.querySelector('.categories__gallery-nav--prev');
-    const nextBtn = document.querySelector('.categories__gallery-nav--next');
-    
-    if (!slider || dots.length === 0) return;
-    
-    let currentSlide = 0;
-    const totalSlides = dots.length;
-    
-    function updateSlider() {
-        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-        
-        // Update dots
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('categories__gallery-dot--active', index === currentSlide);
-        });
-    }
-    
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        updateSlider();
-    }
-    
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        updateSlider();
-    }
-    
-    function goToSlide(slideIndex) {
-        currentSlide = slideIndex;
-        updateSlider();
-    }
-    
-    // Event listeners
-    if (nextBtn) {
-        nextBtn.addEventListener('click', nextSlide);
-    }
-    
-    if (prevBtn) {
-        prevBtn.addEventListener('click', prevSlide);
-    }
-    
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => goToSlide(index));
-    });
-    
-    // Auto-slide
-    let autoSlideInterval = setInterval(nextSlide, 5000);
-    
-    // Pause auto-slide on hover
-    slider.addEventListener('mouseenter', () => {
-        clearInterval(autoSlideInterval);
-    });
-    
-    slider.addEventListener('mouseleave', () => {
-        autoSlideInterval = setInterval(nextSlide, 5000);
-    });
+    // Category slider is now simplified - each category shows one image
+    // No auto-sliding needed
 }
 
 // Hero Map Points Animation

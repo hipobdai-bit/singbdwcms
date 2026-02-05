@@ -433,7 +433,7 @@ export default async function HomePage() {
                 <div className="category__item" data-category="workwear">
                   <div className="category__icon">
                     <img
-                      src="/images/Category Icons/Work Wear.webp"
+                      src="/images/Category Icons/Work Wear.webp 17-10-12-592.webp"
                       alt="Workwear"
                       className="category__icon-img"
                     />
@@ -456,7 +456,7 @@ export default async function HomePage() {
                 <div className="categories__gallery-slider">
                   <div className="categories__gallery-slide" data-category="woven-tops">
                     <img
-                      src="/images/Category Icons/woven-tops-landscape.webp"
+                      src="/images/Category-Overview/Woven-Top.webp"
                       alt="Woven Tops Manufacturing"
                       className="categories__gallery-image"
                     />
@@ -464,219 +464,72 @@ export default async function HomePage() {
 
                   <div className="categories__gallery-slide" data-category="woven-bottoms">
                     <img
-                      src="/images/Category Icons/woven-bottom-landscape.webp"
+                      src="/images/Category-Overview/Woven-Bottom.webp"
                       alt="Woven Bottoms Manufacturing"
                       className="categories__gallery-image"
                     />
                   </div>
-                  <div className="categories__gallery-slide" data-category="woven-bottoms">
-                    <img
-                      src="/images/Category Icons/woven-bottom-land-2.webp"
-                      alt="Woven Bottoms Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="woven-bottoms">
-                    <img
-                      src="/images/Category Icons/woven-bottom-land-3.webp"
-                      alt="Woven Bottoms Quality"
-                      className="categories__gallery-image"
-                    />
-                  </div>
 
                   <div className="categories__gallery-slide" data-category="coats-jackets">
                     <img
-                      src="/images/Category Icons/coats-land-1.webp"
+                      src="/images/Category-Overview/Coats-Jackets.webp"
                       alt="Coats & Jackets Manufacturing"
                       className="categories__gallery-image"
                     />
                   </div>
-                  <div className="categories__gallery-slide" data-category="coats-jackets">
-                    <img
-                      src="/images/Category Icons/coats-land-2.webp"
-                      alt="Coats & Jackets Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="coats-jackets">
-                    <img
-                      src="/images/Category Icons/coats-land-3.webp"
-                      alt="Coats & Jackets Quality"
-                      className="categories__gallery-image"
-                    />
-                  </div>
 
                   <div className="categories__gallery-slide" data-category="denim">
                     <img
-                      src="/images/Category Icons/denim-land.webp"
+                      src="/images/Category-Overview/Denim.webp"
                       alt="Denim Manufacturing"
                       className="categories__gallery-image"
                     />
                   </div>
-                  <div className="categories__gallery-slide" data-category="denim">
-                    <img
-                      src="/images/Category Icons/denim-land-2.webp"
-                      alt="Denim Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="denim">
-                    <img
-                      src="/images/Category Icons/denim-land-4.webp"
-                      alt="Denim Quality"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="denim">
-                    <img
-                      src="/images/Category Icons/denim-land-5.webp"
-                      alt="Denim Collection"
-                      className="categories__gallery-image"
-                    />
-                  </div>
 
                   <div className="categories__gallery-slide" data-category="knitwear">
                     <img
-                      src="/images/Category Icons/knitware-land-1.webp"
+                      src="/images/Category-Overview/Knitwear.webp"
                       alt="Knitwear Manufacturing"
                       className="categories__gallery-image"
                     />
                   </div>
-                  <div className="categories__gallery-slide" data-category="knitwear">
-                    <img
-                      src="/images/Category Icons/knitware-land-2.webp"
-                      alt="Knitwear Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="knitwear">
-                    <img
-                      src="/images/Category Icons/knitware-land-4.webp"
-                      alt="Knitwear Quality"
-                      className="categories__gallery-image"
-                    />
-                  </div>
 
                   <div className="categories__gallery-slide" data-category="sweater">
                     <img
-                      src="/images/Category Icons/sweater-land-1.jpg"
+                      src="/images/Category-Overview/Sweater.jpg"
                       alt="Sweater Manufacturing"
                       className="categories__gallery-image"
                     />
                   </div>
-                  <div className="categories__gallery-slide" data-category="sweater">
-                    <img
-                      src="/images/Category Icons/sweater-land-2.jpg"
-                      alt="Sweater Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="sweater">
-                    <img
-                      src="/images/Category Icons/sweater-land-3.jpg"
-                      alt="Sweater Quality"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="sweater">
-                    <img
-                      src="/images/Category Icons/sweater-land-4.webp"
-                      alt="Sweater Collection"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="sweater">
-                    <img
-                      src="/images/Category Icons/sweater-land-5.jpg"
-                      alt="Sweater Style"
-                      className="categories__gallery-image"
-                    />
-                  </div>
 
                   <div className="categories__gallery-slide" data-category="sportswear">
                     <img
-                      src="/images/Category Icons/sportsware-land-1.webp"
+                      src="/images/Category-Overview/Sportswear.webp"
                       alt="Sportswear Manufacturing"
                       className="categories__gallery-image"
                     />
                   </div>
-                  <div className="categories__gallery-slide" data-category="sportswear">
-                    <img
-                      src="/images/Category Icons/sportsware-land-2.webp"
-                      alt="Sportswear Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="sportswear">
-                    <img
-                      src="/images/Category Icons/sportsware-land-3.webp"
-                      alt="Sportswear Quality"
-                      className="categories__gallery-image"
-                    />
-                  </div>
 
                   <div className="categories__gallery-slide" data-category="homeware">
                     <img
-                      src="/images/Category Icons/homeware-land-1.webp"
+                      src="/images/Category-Overview/Homeware.webp"
                       alt="Homeware Manufacturing"
                       className="categories__gallery-image"
                     />
                   </div>
-                  <div className="categories__gallery-slide" data-category="homeware">
-                    <img
-                      src="/images/Category Icons/homeware-land-2.webp"
-                      alt="Homeware Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="homeware">
-                    <img
-                      src="/images/Category Icons/homeware-land-3.webp"
-                      alt="Homeware Quality"
-                      className="categories__gallery-image"
-                    />
-                  </div>
 
                   <div className="categories__gallery-slide" data-category="handicrafts">
                     <img
-                      src="/images/Category Icons/handi-crafts-land-1.webp"
+                      src="/images/Category-Overview/Handicrafts.webp"
                       alt="Handicrafts Manufacturing"
                       className="categories__gallery-image"
                     />
                   </div>
-                  <div className="categories__gallery-slide" data-category="handicrafts">
-                    <img
-                      src="/images/Category Icons/handicrafts-land-2.webp"
-                      alt="Handicrafts Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="handicrafts">
-                    <img
-                      src="/images/Category Icons/handicrafts-land-3.webp"
-                      alt="Handicrafts Quality"
-                      className="categories__gallery-image"
-                    />
-                  </div>
 
                   <div className="categories__gallery-slide" data-category="workwear">
                     <img
-                      src="/images/Category Icons/workwear-land-1.webp"
+                      src="/images/Category-Overview/Workwear.webp"
                       alt="Workwear Manufacturing"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="workwear">
-                    <img
-                      src="/images/Category Icons/workwear-land-2.webp"
-                      alt="Workwear Process"
-                      className="categories__gallery-image"
-                    />
-                  </div>
-                  <div className="categories__gallery-slide" data-category="workwear">
-                    <img
-                      src="/images/Category Icons/workwear-land-3.webp"
-                      alt="Workwear Quality"
                       className="categories__gallery-image"
                     />
                   </div>
