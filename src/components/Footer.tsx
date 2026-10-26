@@ -28,7 +28,7 @@ export default function Footer({ contact }: FooterProps) {
               alt="SingBD Logo"
               className="footer__logo-img"
             />
-            <h3 className="footer__title">SingBD</h3>
+            <h3 className="footer__title">SingBD Pte Ltd.</h3>
             <p className="footer__description">
               Leading manufacturer of high-quality garments and textiles, committed to
               sustainable practices and innovation.
