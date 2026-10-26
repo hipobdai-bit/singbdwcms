@@ -106,7 +106,7 @@ export default async function HomePage() {
             <div className="video-overview__video-container" style={{ position: "relative", width: "100%", maxWidth: "1200px", margin: "0 auto" }}>
               <div style={{ position: "relative", paddingTop: "56.25%", width: "100%" }}>
                 <iframe
-                  src="https://iframe.mediadelivery.net/embed/489779/0d58b550-33c4-478a-a7ba-9e81efd6b534?autoplay=true&loop=false&muted=false&preload=true&responsive=true"
+                  src="https://customer-ualb3i7s51bgwro5.cloudflarestream.com/40a122fe42b43c90055cbce5dc4c9edf/iframe?autoplay=true&muted=true"
                   loading="lazy"
                   style={{ border: 0, position: "absolute", top: 0, left: 0, height: "100%", width: "100%" }}
                   allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
