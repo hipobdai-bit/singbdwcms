@@ -8,9 +8,8 @@ type FooterProps = {
 
 export default function Footer({ contact }: FooterProps) {
   const addressLines = contact?.addressLines ?? [
-    "9th Floor, ANZ Huq Eleven Square",
-    "Plot #01, Road #11, Block #H",
-    "Banani, Dhaka-1213, Bangladesh",
+    "100 Jalan Sultan, #09-04 Sultan Plaza",
+    "Singapore - 199001",
   ];
   const email = contact?.email ?? "info@singbd.com";
   const phone = contact?.phone ?? "+8801711594673";
